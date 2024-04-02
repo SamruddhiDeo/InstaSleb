@@ -7,7 +7,4 @@
 
     <style name="Theme.InstaSleb" parent="Base.Theme.InstaSleb" />
 
-    <style name="cardViewStyle">
-        <item name="android:backdropColor">@drawable/card_bg</item>
-    </style>
 </resources>

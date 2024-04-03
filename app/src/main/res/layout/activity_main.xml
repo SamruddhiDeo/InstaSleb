@@ -7,11 +7,13 @@
     android:background="@drawable/bg"
     tools:context=".MainActivity">
 
+
+
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="@dimen/_110sdp"
-        android:layout_height="@dimen/_40sdp"
-        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
         android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.07"
@@ -32,16 +34,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/girlll"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cardViewll"
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintStart_toStartOf="@+id/girlll"
         app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.86">
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/_110sdp"
+            android:layout_width="190dp"
+            android:layout_height="60dp"
             android:src="@drawable/message_left"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -57,18 +59,18 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.42000002">
+            app:layout_constraintVertical_bias="0.120000005">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="173dp"
+                android:layout_height="48dp"
                 android:fontFamily="@font/jester"
                 android:gravity="center"
-                android:padding="@dimen/_10sdp"
-                android:paddingBottom="@dimen/_7sdp"
+                android:padding="10dp"
+                android:paddingBottom="10dp"
                 android:text="Are U 14 Years Or Older?"
                 android:textColor="@color/purple"
-                android:textSize="@dimen/_13ssp"
+                android:textSize="13dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -79,26 +81,26 @@
 
     <LinearLayout
         android:id="@+id/cardViewll"
-        android:layout_width="@dimen/_210sdp"
+        android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:background="@drawable/shadow_border"
-        android:padding="@dimen/_14sdp"
         android:orientation="horizontal"
+        android:padding="14dp"
         app:layout_constraintBottom_toBottomOf="@+id/girlll"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/girlll"
         app:layout_constraintTop_toTopOf="@+id/girlll"
-        app:layout_constraintVertical_bias="0.32999998">
+        app:layout_constraintVertical_bias="0.22000003">
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
             android:background="@drawable/yellow_border"
+            android:gravity="center"
             android:orientation="vertical"
-            android:padding="@dimen/_20sdp">
+            android:padding="20dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -106,25 +108,29 @@
                 android:fontFamily="@font/jester"
                 android:text="@string/cardTxt"
                 android:textColor="@color/white"
-                android:textSize="@dimen/_13ssp" />
+                android:textSize="17dp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginTop="26dp"
                 android:background="@drawable/btn_green_bg"
                 android:fontFamily="@font/jester"
                 android:text="Yes, Continue"
-                android:textColor="@color/white" />
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginTop="26dp"
                 android:background="@drawable/btn_yellow_bg"
                 android:fontFamily="@font/jester"
                 android:text="No, I am Not 14"
-                android:textColor="#983A77" />
+                android:textAllCaps="false"
+                android:textColor="#983A77"
+                android:textSize="14dp" />
 
         </LinearLayout>
 
@@ -136,27 +142,29 @@
         android:layout_height="wrap_content"
         android:elevation="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.82">
+        app:layout_constraintVertical_bias="0.83">
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="@dimen/_140sdp"
-            android:layout_height="@dimen/_370sdp"
+            android:layout_width="140dp"
+            android:layout_height="480dp"
             android:src="@drawable/girl" />
     </LinearLayout>
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="@dimen/_270sdp"
-        android:layout_height="@dimen/_60sdp"
+        android:layout_width="360dp"
+        android:layout_height="78dp"
         android:src="@drawable/platform"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/girlll"
+        app:layout_constraintVertical_bias="0.87" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
